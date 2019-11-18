@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF9912</color>
+    <color name="colorPrimaryDark">#FF9912</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="color_app_themes">#ffFF77</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="white_pressed">#FFCFCFCF</color>
+    <color name="divider_color">#FFB7B2B2</color>
+    <color name="text_color">#FF333333</color>
+    <color name="desc_text_color">#FF999999</color>
+    <color name="red">#FF0000</color>
+    <color name="red_pressed">#FF6666</color>
+    <color name="green">#37C000</color>
+    <color name="green_pressed">#30A070</color>
+    <color name="green_light">#ff99cc00</color>
+    <color name="purple">#9932CC</color>
+    <color name="purple_pressed">#9F79EE</color>
+    <color name="purple_light">#9F79EE</color>
+    <color name="blue_sky">#87CEEB</color>
+    <color name="gray">#C0C0C0</color>
+    <color name="gray_cold">#808A87</color>
+    <color name="gray_hot">#808069</color>
+    <color name="black">#000000</color>
+    <color name="common_black_alpha22">#22000000</color>
+    <color name="shadow_color">#37000000</color>
+</resources>

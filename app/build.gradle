@@ -1,0 +1,78 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        releaseConfigs {
+            storeFile file("${rootDir}/buildkey/alexlee1987.jks")
+            storePassword "abcd123456"
+            keyAlias "alexlee1987"
+            keyPassword "abcd123456"
+        }
+    }
+
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.alexlee1987.smartlrecyclerview"
+        minSdkVersion 19
+        targetSdkVersion 28
+        multiDexEnabled true
+        versionCode 1
+        versionName "1.0.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk {
+            abiFilters "armeabi", "armeabi-v7a", "x86", "mips"
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled true //true: 开启此项，以启用proguard 代码混淆
+            shrinkResources true //true时为启用资源压缩功能
+            debuggable false //关闭调试模式
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.releaseConfigs
+        }
+        debug {
+            minifyEnabled false //调试debug模式，不启用代码混淆
+            shrinkResources false //调试debug模式，不启用资源压缩功能
+            debuggable true //打开调试模式
+            // 设置混淆文件目录
+        }
+    }
+
+    applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            if (variant.buildType.name == "release") {
+                def outputFile = output.outputFile
+                def fileName
+                if (null != outputFile && outputFile.name.endsWith('.apk')) {
+                    variant.getPackageApplication().outputDirectory = new File(project.rootDir.absolutePath + "/APK")
+                    fileName = "SmartLRecyclerView_demo_v${defaultConfig.versionName}.apk"
+                    outputFileName = fileName
+                }
+            }
+        }
+    }
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    compile(name: 'smarttab-release', ext: 'aar')
+    //这里引入一个ItemDecoration库结合recyclerview教你如何现实悬停效果
+    implementation 'com.oushangfeng:PinnedSectionItemDecoration:1.2.5'
+
+    implementation project(':smartrecyclerview')
+}

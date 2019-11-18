@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.alexlee1987.smartlrecyclerview">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.LinearActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".activity.GridActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".activity.MultiItemActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".activity.DragActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".group.GroupMainActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".group.GroupedListActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".group.NoHeaderActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".group.NoFooterActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".group.MultiStyleGridActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".group.ExpandableActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".group.VariousActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".group.VariousChildActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".sticky.StickyMainActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".sticky.StickyLayoutActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".sticky.StickyItemActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".sticky.StickyTabActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".sticky.StickyTab2Activity"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".sticky.StickyGridItemDecorationActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"/>
+
+    </application>
+
+</manifest>
