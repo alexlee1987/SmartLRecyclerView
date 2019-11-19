@@ -17,6 +17,11 @@
 - 支持各种分组、随心定义分组头部、尾部、多类型内容item；
 - 支持Sticky（黏性）效果。
 
+## Demo下载
+[![downloads](https://img.shields.io/badge/downloads-1.8M-blue.svg)](https://github.com/alexlee1987/SmartLRecyclerView/blob/master/APK/SmartLRecyclerView_demo_v1.0.0.apk?raw=true)
+
+### 扫码下载体验
+![](https://github.com/alexlee1987/SmartLRecyclerView/blob/master/ScreenShot/down_apk.png?raw=true)
 ## 鸣谢
 本库前身主要是以XRecyclerView为基础展开，借鉴和整合其它一些开源项目，再次感谢！
 - [https://github.com/XRecyclerView](https://github.com/XRecyclerView)
